@@ -1,0 +1,36 @@
+PS D:\プログラミング\samurai-kadai> mkdir git_challenge
+
+
+    ディレクトリ: D:\プログラミング\samurai-kadai
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/08/02     14:25                git_challenge
+
+
+PS D:\プログラミング\samurai-kadai> cd D:\プログラミング\samurai-kadai\git_challenge
+PS D:\プログラミング\samurai-kadai\git_challenge> New-Item hello_world.txt
+
+
+    ディレクトリ: D:\プログラミング\samurai-kadai\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2024/08/02     14:26              0 hello_world.txt
+
+PS D:\プログラミング\samurai-kadai\git_challenge> git init
+Initialized empty Git repository in D:/プログラミング/samurai-kadai/git_challenge/.git/
+PS D:\プログラミング\samurai-kadai\git_challenge> git add hello_world.txt
+PS D:\プログラミング\samurai-kadai\git_challenge> git commit -m "最初のコミット”
+[main (root-commit) c220a8b] 最初のコミット
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS D:\プログラミング\samurai-kadai\git_challenge> git add hello_world.txt
+PS D:\プログラミング\samurai-kadai\git_challenge> git commit -m "2回目のコミット”
+[main a09b48c] 2回目のコミット
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS D:\プログラミング\samurai-kadai\git_challenge> git log --oneline
+a09b48c (HEAD -> main) 2回目のコミット
+c220a8b 最初のコミット
